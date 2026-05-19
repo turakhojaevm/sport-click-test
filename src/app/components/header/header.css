@@ -1,0 +1,118 @@
+.header {
+    background: #F6F6F6;
+    border-bottom: 1px solid #e8e8e8;
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    padding: 25px 37px;
+}
+
+.header-inner {
+    max-width: 1360px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 54px;
+    padding: 0 16px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #1a1a1a;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.logo-box {
+    background: #e8263a;
+    color: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.h-page-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.h-btn {
+    padding: 18px 30px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    border: none;
+    font-family: inherit;
+}
+
+.h-pages {
+    background: #EAEAEA;
+    color: #1a1a1a;
+}
+
+.h-pages:hover {
+    background: #4C4C4C;
+    color: #fff;
+}
+
+.h-add {
+    background: #FFEEEE;
+    color: #EA0130;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+.h-sep {
+    flex: 1;
+}
+
+.h-icons {
+    display: flex;
+    align-items: center;
+}
+
+.h-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #666;
+    position: relative;
+    white-space: nowrap;
+}
+
+.h-notif {
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    background: #e8263a;
+    color: #fff;
+    font-size: 8px;
+    font-weight: 700;
+    min-width: 13px;
+    height: 13px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2px;
+}

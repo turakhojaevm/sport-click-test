@@ -1,0 +1,47 @@
+.page {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 30px 16px 40px;
+    flex: 1;
+    width: 100%;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.breadcrumb span {
+    cursor: pointer;
+}
+
+.breadcrumb span.selected {
+    color: #1F1F1F;
+}
+
+.page-title {
+    font-size: 29px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 14px;
+    align-items: start;
+}
+
+.cards-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+

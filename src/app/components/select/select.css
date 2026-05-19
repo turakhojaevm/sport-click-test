@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined');
+
+:host {
+  width: 100%;
+}
+
+.select {
+  display: flex;
+  position: relative;
+  align-items: center;
+  color: #1F1F1F;
+  background-color: #F6F6F6;
+  border-radius: 0.5rem;
+  border: #F6F6F6;
+}
+
+.selected-label-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.select:has([ngComboboxInput][aria-disabled='true']) {
+  opacity: 0.6;
+  cursor: default;
+}
+
+[ngComboboxInput] {
+  opacity: 0;
+  cursor: pointer;
+  padding: 0 1.5rem;
+  height: 2.5rem;
+  border: none;
+}
+
+.combobox-label {
+  gap: 1rem;
+  left: 1.5rem;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  pointer-events: none;
+}
+
+.example-arrow {
+  right: 1rem;
+  position: absolute;
+  pointer-events: none;
+  transition: transform 150ms ease-in-out;
+}
+
+[ngComboboxInput][aria-expanded='true'] ~ .example-arrow {
+  transform: rotate(180deg);
+}
+
+.example-popup-container {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 8px;
+  border-radius: 0.5rem;
+  background-color: white;
+  font-size: 16px;
+  opacity: 1;
+  visibility: visible;
+  transition: max-height 150ms ease-out,
+  visibility 0s,
+  opacity 25ms ease-out;
+}
+
+[ngListbox] {
+  gap: 2px;
+  height: 100%;
+  display: flex;
+  /*overflow: auto;*/
+  flex-direction: column;
+}
+
+[ngCombobox]:has([ngComboboxInput][aria-expanded='false']) .example-popup-container {
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height 150ms ease-in,
+  visibility 0s 150ms,
+  opacity 150ms ease-in;
+}
+
+[ngCombobox]:has([ngComboboxInput][aria-expanded='true']) [ngListbox] {
+  display: flex;
+}
+
+[ngOption] {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  margin: 1px;
+  padding: 0 1rem;
+  min-height: 2.25rem;
+  border-radius: 0.5rem;
+}
+
+[ngOption]:hover {
+  background-color: color-mix(in srgb, #FFFFFF 5%, transparent);
+}
+
+[ngOption][aria-selected='true'] .example-option-text-count {
+  color: #000;
+}
+
+[ngOption]:not([aria-selected='true']) .example-option-check {
+  display: none;
+}
+
+.example-option-check {
+  font-size: 0.9rem;
+}
+
+.example-option-text {
+  flex: 1;
+  color: #818189;
+}
+
+.sb-btn {
+  background: #E8EBFF;
+  color: #283DC1;
+  border: none;
+  border-radius: 7px;
+  padding: 12px 44px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  max-width: 162px;
+}

@@ -1,0 +1,38 @@
+<div ngCombobox readonly>
+  <div #origin class="select">
+    <span class="combobox-label">
+      <span class="selected-label-text">{{ displayValue().name }} <span
+        style="opacity: 0.7;">({{ displayValue().count }})</span></span>
+    </span>
+    <input aria-label="Label dropdown" placeholder="Select a label" ngComboboxInput />
+    <span class="example-arrow material-symbols-outlined" translate="no" aria-hidden="true"
+    >arrow_drop_down</span
+    >
+  </div>
+  <ng-template ngComboboxPopupContainer>
+    <ng-template
+      [cdkConnectedOverlay]="{origin, usePopover: 'inline', matchWidth: true}"
+      [cdkConnectedOverlayOpen]="true"
+    >
+      <div class="example-popup-container">
+        <div ngListbox>
+          @for (label of labels; track label) {
+            <div ngOption [value]="label" [label]="label.name">
+              <span class="example-option-text">
+                <span class="example-option-text-count">{{ label.name }}</span>
+                ({{ label.count }})
+              </span>
+              <span
+                class="example-option-check material-symbols-outlined"
+                translate="no"
+                aria-hidden="true"
+              >check</span
+              >
+            </div>
+          }
+          <button class="sb-btn">Сохранить</button>
+        </div>
+      </div>
+    </ng-template>
+  </ng-template>
+</div>

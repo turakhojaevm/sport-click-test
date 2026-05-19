@@ -1,0 +1,225 @@
+.sidebar {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.sb-search {
+  background: #F6F6F6;
+  display: flex;
+  gap: 6px;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+
+.sb-search input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 15px;
+  color: #1a1a1a;
+  outline: none;
+  min-width: 120px;
+}
+
+.sb-search input::placeholder {
+  color: #bbb;
+}
+
+.sb-search input:focus {
+  border-color: #e8263a;
+}
+
+.sb-search button.sb-search-icon {
+  padding: 15px 5px 15px 28px;
+  border: none;
+  background: transparent;
+}
+
+.sb-search button.sb-search-btn {
+  background: #D8FFD8;
+  color: #26B626;
+  border: none;
+  border-radius: 6px;
+  padding: 15px 28px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.sb-filter-hd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sb-filter-hd .lbl {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.sb-filter-hd .f-count {
+  color: Blue;
+}
+
+.sb-filter-hd .clr {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 16px;
+  color: Blue;
+  cursor: pointer;
+  padding: 0;
+}
+
+.sb-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+.sb-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #F6F6F6;
+  border: 1px solid #F6F6F6;
+  border-radius: 13px;
+  padding: 10px 15px;
+  font-size: 11px;
+  color: #333;
+}
+
+.sb-chip button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #aaa;
+  font-size: 20px;
+  line-height: 1;
+  padding: 0 2px;
+  display: flex;
+  align-items: center;
+}
+
+.sb-chip button:hover {
+  color: #e8263a;
+}
+
+.sb-sec-lbl {
+  font-size: 20px;
+  color: #888;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.sport-wrap {
+  margin-bottom: 25px;
+}
+
+.sport-hd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 9px;
+  font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+  background: #fff;
+}
+
+.sport-hd:hover {
+  background: #fafafa;
+}
+
+.sport-arrow {
+  font-size: 10px;
+  color: #999;
+  transition: transform .15s;
+}
+
+.sport-arrow.up {
+  transform: rotate(180deg);
+}
+
+.sport-list {
+  display: none;
+  border-top: 1px solid #f0f0f0;
+}
+
+.sport-list.show {
+  display: block;
+}
+
+.sport-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 9px;
+  font-size: 12px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.sport-item:hover {
+  background: #f7f7f7;
+}
+
+.sport-item .n {
+  color: #999;
+  font-size: 11px;
+}
+
+/* Tag items */
+.tag-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  cursor: pointer;
+}
+
+.tag-left {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+}
+
+.tag-arr {
+  font-size: 9px;
+  color: #ccc;
+  transition: color .12s;
+}
+
+.tag-arr.active {
+  color: #e8263a;
+}
+
+.tag-cnt {
+  font-size: 11px;
+  color: #bbb;
+}
+
+.sb-btn {
+  background: #283DC1;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 19px 9px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+}
+
+.sb-btn:hover {
+  background: #2f5cde;
+}
